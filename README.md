@@ -1,36 +1,71 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Ecom Next.js Project
+
+This is an e-commerce web application built with Next.js, TypeScript, Stripe, and modern React features.
+
+## Features
+
+- Product carousel
+- Stripe integration for payments
+- Responsive navigation bar
+- Product listing and checkout pages
+- Modular UI components
+
+## Tech Stack
+
+- Next.js
+- React
+- TypeScript
+- Stripe API
+- PostCSS
+- ESLint
 
 ## Getting Started
 
-First, run the development server:
+### Prerequisites
+
+- Node.js
+- pnpm (or npm/yarn)
+
+### Installation
+
+1. Clone the repository:
+   ```bash
+   git clone <repo-url>
+   cd ecom
+   ```
+2. Install dependencies:
+   ```bash
+   pnpm install
+   ```
+3. Set up Stripe API keys in your environment variables.
+
+### Running the App
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
 pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### Folder Structure
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+- `app/` - Main application pages (products, checkout, etc.)
+- `components/` - Reusable UI components (carousel, navbar, card, button)
+- `lib/` - Utility libraries (Stripe integration)
+- `public/` - Static assets (SVGs, images)
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Stripe Integration
 
-## Learn More
+- Configure your Stripe keys in `lib/stripe.ts`.
+- Products and checkout use Stripe's API for secure payments.
 
-To learn more about Next.js, take a look at the following resources:
+## Customization
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- Modify UI components in `components/ui/` for your branding.
+- Add new pages in the `app/` directory.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## License
 
-## Deploy on Vercel
+MIT
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+---
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Feel free to contribute or open issues for improvements!
